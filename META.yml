@@ -1,0 +1,8 @@
+--- #YAML:1.0
+name: MIME-Lite-TT-HTML
+version: 0.01
+author:
+  - Sheng Chun E<lt>chunzi@cpan.orgE<gt>
+abstract: Create html mail with MIME::Lite and TT
+license: perl
+generated_by: Module::Build version 0.2611, without YAML.pm
