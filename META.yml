@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name: MIME-Lite-TT-HTML
-version: 0.01
+version: 0.02
 author:
   - Sheng Chun E<lt>chunzi@cpan.orgE<gt>
 abstract: Create html mail with MIME::Lite and TT

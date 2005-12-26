@@ -8,7 +8,7 @@ use DateTime::Format::Mail;
 use HTML::FormatText::WithLinks;
 use Carp;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 NAME
 
@@ -110,7 +110,8 @@ sub new {
     my $time_zone   = delete $options->{ TimeZone } || 'UTC';
     my $tmpl_params = delete $options->{ TmplParams };
     my $encoding = delete $options->{ Encoding } || '7bit';
-    my $charset     = delete $options->{ Charset };
+    my $charset_option = delete $options->{ Charset };
+    my $charset = ref $charset_option eq 'ARRAY' ? [ @{$charset_option} ] : [ $charset_option ];
     $charset = [ $charset ] unless ref $charset eq 'ARRAY';
 	my $charset_input  = shift @$charset || 'US-ASCII';
 	my $charset_output = shift @$charset || $charset_input;
