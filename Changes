@@ -1,4 +1,6 @@
 Revision history for Perl module MIME::Lite::TT::HTML
+0.03 2006-02-20 9:16
+	- minor pod fixed. (Geoff Simmons)
 
 0.02 2005-12-26 12:25
 	- fixed charset option lost ref data

@@ -8,7 +8,7 @@ use DateTime::Format::Mail;
 use HTML::FormatText::WithLinks;
 use Carp;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 =head1 NAME
 
@@ -18,7 +18,7 @@ MIME::Lite::TT::HTML - Create html mail with MIME::Lite and TT
 
     use MIME::Lite::TT::HTML;
     
-    my $msg = MIME::Lite::HTML->new(
+    my $msg = MIME::Lite::TT::HTML->new(
         From        => 'from@example.com',
         To          => 'to@example.com',
         Subject     => 'Subject',
