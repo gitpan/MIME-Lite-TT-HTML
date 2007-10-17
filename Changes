@@ -1,4 +1,8 @@
 Revision history for Perl module MIME::Lite::TT::HTML
+
+0.04 2007-10-17 15:56:47
+	- using base64 as the subject encoding method (Thanks Torsten Rückert)
+
 0.03 2006-02-20 9:16
 	- minor pod fixed. (Geoff Simmons)
 

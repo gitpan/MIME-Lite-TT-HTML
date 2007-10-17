@@ -8,7 +8,7 @@ use DateTime::Format::Mail;
 use HTML::FormatText::WithLinks;
 use Carp;
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 =head1 NAME
 
@@ -158,7 +158,7 @@ sub encode_subject {
     my $string = remove_utf8_flag( $subject );
 	Encode::from_to( $string, $charset_input, $charset_output )
 		if $charset_input ne $charset_output;
-	encode_mimeword( $string, 'q', $charset_output );
+	encode_mimeword( $string, 'b', $charset_output );
 }
 
 sub encode_body {
